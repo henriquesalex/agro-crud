@@ -1,0 +1,51 @@
+/* activity.component.css */
+.activity-list {
+    padding: 20px;
+  }
+  
+  .activity-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .ring {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .ring-success {
+    background-color: #28a745; /* Verde */
+  }
+  
+  .ring-primary {
+    background-color: #007bff; /* Azul */
+  }
+  
+  .ring-info {
+    background-color: #17a2b8; /* Ciano */
+  }
+  
+  .ring-warning {
+    background-color: #ffc107; /* Amarelo */
+  }
+  
+  .ring-danger {
+    background-color: #dc3545; /* Vermelho */
+  }
+  
+  .activity-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .activity-time {
+    font-weight: bold;
+  }
+  
+  .activity-message {
+    margin: 0;
+  }
+  

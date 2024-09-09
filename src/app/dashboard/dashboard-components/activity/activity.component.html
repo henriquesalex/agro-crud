@@ -1,0 +1,19 @@
+<div class="card">
+  <div class="card-body">
+    <h4 class="mb-32">Crop Activity Log</h4>
+    <div *ngIf="activity.length > 0; else noData">
+      <ul class="list-group">
+        <li *ngFor="let item of activity" class="list-group-item d-flex align-items-center">
+          <span [ngClass]="item.ringColor" class="badge"></span>
+          <div class="ms-3">
+            <div class="fw-bold">{{ item.count }}</div>
+            <div>{{ item.message }}</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <ng-template #noData>
+      <p>No activity data available.</p>
+    </ng-template>
+  </div>
+</div>
